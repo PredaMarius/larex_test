@@ -119,7 +119,8 @@ export const pretOptional=(produse,optional=0, lungime=0, inaltime=0, lungimeFin
       case 9:
       case 28: 
       case 29: 
-      case 30:      
+      case 30:
+      case 34:       
         return  vProdus.optionaleCompatibile.find(opt => opt.key === optional && opt.ax=== ax).pret * (lungime===0 || lungime===''? cotaLungime : lungime*1 + 20) / 1000;
       case 27: 
         return  vProdus.optionaleCompatibile.find(opt => opt.key === optional && opt.ax=== ax).pret * (lungime===0 || lungime===''? cotaLungime-15 : lungime*1 + 5) / 1000;
